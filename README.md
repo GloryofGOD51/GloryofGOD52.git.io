@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -30,15 +31,15 @@
         /* --- ФОНОВЫЕ ЦИФРЫ (ИЗМЕНЕНИЕ #1) --- */
         .background-number {
             position: fixed;
-            top: 50%;
-            left: 50%;
+            top: 69%;
+            left: 60%;
             transform: translate(-50%, -50%);
             font-family: var(--header-font);
             font-weight: 900;
             font-size: 35vw;
             color: #6E0000; /* Сделаем их темнее и прозрачнее, чтобы не мешали */
             opacity: 0.6;
-            z-index: 15; /* Слой МЕЖДУ фоном и текстом */
+            z-index: 10; /* Слой МЕЖДУ фоном и текстом */
             pointer-events: none;
             user-select: none;
         }
@@ -107,7 +108,7 @@
         .content-section h2 { font-family: var(--header-font); font-size: 2.2rem; color: var(--accent-color); text-align: center; border-bottom: 1px solid #5a5042; padding-bottom: 1rem; margin-bottom: 2rem; }
         .content-section h3 { font-family: var(--body-font); font-weight: 700; font-size: 1.5rem; color: #e0d6c3; margin-top: 2.5rem; border-top: 1px solid #444; padding-top: 1.5rem; }
         
-        .verse-block { display: flex; align-items: flex-start; margin-bottom: 1.5rem; line-height: 2; }
+        .verse-block { display: flex; align-items: flex-start; margin-bottom: 1.5rem; line-height: 2;z-index: 20; }
         .verse-number { font-family: var(--header-font); font-size: 0.9rem; color: var(--accent-color); min-width: 60px; padding-right: 15px; }
         .verse-text { font-size: 1.2rem; margin: 0; text-shadow: 1px 1px 2px #111; }
         
@@ -213,4 +214,3 @@
 
 </body>
 </html>
-
